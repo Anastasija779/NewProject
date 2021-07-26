@@ -262,14 +262,17 @@ body {
       .logo__circle_color_blue {
         top: 57%;
       }
+      .menu {
+        padding-top: 7px;
+      }
       .main {
         text-align: center;
-        padding: 63% 0 0;
-        background-size: 75%;
+        padding: 62% 0 0;
+        background-size: 74%;
         background-position: top center;
       }
       .main__title {
-        margin-bottom: 44px;
+        margin-bottom: 46px;
         padding-left: 54px;
         padding-top: 24px;
         align-items: center;
@@ -279,7 +282,7 @@ body {
       }
       .main__subtitle {
         margin-bottom: 25px;
-        margin-left: 69px;
+        margin-left: 72px;
         font: 500 16px/19px 'roboto', arial, helvetica, sans-serif;
         text-align: center;
         width: 237px;
@@ -288,7 +291,7 @@ body {
       .main__button {
         font: 500 14px/16px 'roboto', arial, helvetica, sans-serif;
         width: 203px;
-        padding: 15px 7px 12px 0px;
+        padding: 14px 7px 12px 0px;
       }
       .image-content {
       display: none;
@@ -344,14 +347,17 @@ body {
     }
     .menu__item {
       display: block;
-      padding: 18px 80px;
+      padding: 17px 100px;
       margin-right: 0;
       color: #000;
       font: 500 30px/25px 'roboto', arial, helvetica, sans-serif;
       text-decoration: none;
     }
     .menu__item:last-child {
-      margin-right: 0;
+      margin-right: 4px;
+    }
+    .menu__item:nth-last-child {
+      padding-top: 10px;
     }
     .menu__item:hover {
       background-color: #CFD8DC;
