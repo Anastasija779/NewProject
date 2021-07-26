@@ -234,7 +234,7 @@ body {
   }
    }
     /*адаптация 375px*/
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
       body {
         width: 375px;
         height: 667px;
@@ -318,7 +318,8 @@ body {
           display: block;
           position: absolute;
           width: 100%;
-          height: 2px;
+          height: 3px;
+          transition: 0.5s;
           background-color: #0056EC;;
         }
         .menu__btn > span::before {
@@ -345,10 +346,26 @@ body {
       background-color: #FFF;
       box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     }
+    .menu {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 173px 0;
+      text-align: center;
+      background: #fff;
+      max-width: 100%;
+      transition: left 0.5s ease-out;
+ }
     .menu__item {
-      display: block;
+      display: inline-block;
       padding: 17px 100px;
       margin-right: 0;
+      width: auto;
       color: #000;
       font: 500 30px/25px 'roboto', arial, helvetica, sans-serif;
       text-decoration: none;
@@ -356,12 +373,25 @@ body {
     .menu__item:last-child {
       margin-right: 4px;
     }
-    .menu__item:nth-last-child {
-      padding-top: 10px;
-    }
     .menu__item:hover {
       background-color: #CFD8DC;
+      opacity: 0.5;
     }
+    .menu__item_active:after {
+      position: absolute;
+      display: block;
+      content: '';
+      height: 3px;
+      background: #0056EC;
+    }
+    .menu__item:hover::after {
+      display: block;
+      content: '';
+      max-width: 100%;
+      height: 3px;
+      position: absolute;
+      background: #0056ec;
+}
     #menu__toggle:checked ~ .menu__btn > span {
       transform: rotate(45deg);
     }
