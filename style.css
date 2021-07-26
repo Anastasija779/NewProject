@@ -1,7 +1,5 @@
 body {
   margin: 0;
-  width: 1920px;
-  height: 1080px;
 }
 .wrapper {
   margin: auto;
@@ -136,12 +134,7 @@ body {
     display: none;
   }
   /*адаптация для 1366px*/
-
- @media (max-width: 1366px) {
-   body {
-     width: 1366px;
-     height: 768px;
-   }
+ @media (max-width: 1368px) {
    .wrapper {
      width: 68%;
    }
@@ -189,10 +182,6 @@ body {
  }
  /*адаптация для 1024px*/
  @media (max-width: 1024px) {
-   body {
-     width: 1024px;
-     height: 768px;
-   }
    .wrapper {
      width: 91%;
    }
@@ -235,10 +224,6 @@ body {
    }
     /*адаптация 375px*/
     @media (max-width: 768px) {
-      body {
-        width: 375px;
-        height: 667px;
-      }
       .wrapper {
         width: 100%;
       }
@@ -371,7 +356,10 @@ body {
       text-decoration: none;
     }
     .menu__item:last-child {
-      margin-right: 4px;
+      margin-right: 0;
+    }
+    .menu__item:nth-child (3) {
+      margin-top: 3px;
     }
     .menu__item:hover {
       background-color: #CFD8DC;
