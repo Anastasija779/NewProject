@@ -296,6 +296,7 @@ body {
 
   .header {
         margin-bottom: 1px;
+        margin-left: 28px;
       }
 
   .logo {
@@ -319,33 +320,32 @@ body {
   .main {
         text-align: center;
         padding: 57% 0 0;
-        background-size: 64%;
+        background-size: 61%;
         background-position: top center;
       }
 
   .main__title {
-        margin-bottom: 46px;
-        padding-left: 245px;
-        padding-top: 26px;
-        align-items: center;
-        font: bold 33px/40px 'pt_serif', arial, helvetica, sans-serif;
-        width: 273px;
-        height: 105px;
+    margin: 0 auto;
+    margin-bottom: 46px;
+    padding: 0;
+    font: bold 33px/40px 'pt_serif', arial, helvetica, sans-serif;
+    width: 273px;
+    height: 105px;
       }
 
   .main__subtitle {
-        margin-bottom: 25px;
-        margin-left: 263px;
-        font: 500 16px/19px 'roboto', arial, helvetica, sans-serif;
-        text-align: center;
-        width: 237px;
-        height: 57px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 0;
+    font: 500 16px/19px 'roboto', arial, helvetica, sans-serif;
+    width: 237px;
+    height: 57px;
       }
 
   .main__button {
-        font: 500 14px/16px 'roboto', arial, helvetica, sans-serif;
-        width: 203px;
-        padding: 14px 7px 12px 0px;
+    font: 500 14px/16px 'roboto', arial, helvetica, sans-serif;
+    width: 203px;
+    padding: 14px 7px 12px 0px;
       }
 
   .image-content {
@@ -361,7 +361,7 @@ body {
           align-items: center;
           position: fixed;
           top: 31px;
-          right: 24px;
+          right: 34px;
           width: 25px;
           height: 17px;
           cursor: pointer;
@@ -395,8 +395,8 @@ body {
       visibility: hidden;
       top: 0;
       left: -100%;
-      width: 375px;
-      height: 492px;
+      width: 768px;
+      height: 800px;
       margin: 0;
       padding-top: 174px;
       padding-left: 1px;
@@ -492,4 +492,31 @@ body {
       transition-duration: .25s;
     }
 
+    }
+
+    @media (max-width: 375px) {
+      .header {
+        margin-left: 0;
+      }
+
+      .main {
+        padding: 69% 0 0;
+        background-size: 74%;
+      }
+
+      .main__title {
+        padding-left: 6px;
+        font: bold 32px/39px 'pt_serif', arial, helvetica, sans-serif;
+      }
+
+      .main__subtitle{
+        padding-left: 6px;
+      }
+      .menu__box {
+        width: 375px;
+        height: 492px;
+      }
+      .menu__btn {
+        right: 24px;
+      }
     }
