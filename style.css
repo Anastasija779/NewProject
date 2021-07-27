@@ -52,7 +52,7 @@ body {
   font: 500 18px/21px 'roboto', arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 
 .menu__item:after {
@@ -64,14 +64,14 @@ body {
   height: 3px;
   background: #0056EC;
   opacity: 0;
-  transition: opacity .5s, width .5s;
+  transition: opacity 0.5s, width 0.5s;
 }
 
 .menu__item:last-child {
   margin-right: 10px;
 }
 
-.menu__item_active:after {
+.menu__item_active::after {
   position: absolute;
   display: block;
   content: '';
@@ -85,7 +85,7 @@ body {
   opacity: 0.5;
 }
 
-.menu__item:hover:after {
+.menu__item:hover::after {
   position: absolute;
   left: 0;
   display: block;
@@ -95,7 +95,8 @@ body {
   background: #0056EC;
 }
 
-.menu__item:hover:after, .menu__item_active:after {
+.menu__item:hover::after,
+.menu__item_active::after {
   opacity: 1;
   width: 100%;
 }
@@ -123,13 +124,13 @@ body {
 }
 
 .main__title-text_highlight {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 15%, #ECF3FF 15%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 15%, #ecf3ff 15%);
 }
 
 .main__button {
   display: inline-block;
   font: 500 18px/21px 'roboto', arial, helvetica, sans-serif;
-  color: #FFF;
+  color: #fff;
   background: #0056EC;
   padding: 18px 17px 8px 12px;
   margin-left: 2px;
@@ -142,30 +143,30 @@ body {
 }
 
 .main__button:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .image-content {
   width: 100%;
-  margin-top:20px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
-  }
+}
 
-  .hamburger-menu{
-    display: none;
-  }
+.hamburger-menu {
+  display: none;
+}
 
-  @media (max-width: 1580px) {
-    .wrapper {
-      width: 82%;
+@media (max-width: 1580px) {
+  .wrapper {
+  width: 82%;
     }
-  }
+}
 
-  /*адаптация для 1366px*/
+/*адаптация для 1366px*/
  @media (max-width: 1368px) {
-   .wrapper {
-     width: 68%;
+  .wrapper {
+  width: 68%;
    }
 
    .header {
@@ -227,27 +228,27 @@ body {
     }
   }
 
- /*адаптация для 1024px*/
+/* адаптация для 1024px */
  @media (max-width: 1024px) {
    .wrapper {
-     width: 91%;
+    width: 91%;
    }
 
    .header {
-     margin-bottom: 85px;
+    margin-bottom: 85px;
    }
 
    .logo {
-     padding-left: 44px;
+    padding-left: 44px;
    }
 
    .menu__item {
-     margin-right: 22px;
-     padding-top: 10px;
+    margin-right: 22px;
+    padding-top: 10px;
    }
 
    .menu__item:last-child {
-     margin-right: 1px;
+    margin-right: 1px;
    }
 
    .main {
@@ -256,9 +257,9 @@ body {
    }
 
    .main__title {
-     font: bold 50px/66px 'pt_serifbold', arial, helvetica, sans-serif;
-     margin-top: 0;
-     margin-bottom: 42px;
+    font: bold 50px/66px 'pt_serifbold', arial, helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom: 42px;
    }
 
    .main__sibtitle {
@@ -280,18 +281,19 @@ body {
   }
 
 
-    /*адаптация 375px*/
-   @media (max-width: 768px) {
+/* адаптация 375px */
+@media (max-width: 768px) {
   .wrapper {
         width: 100%;
       }
 
   .hamburger-menu {
-        display: inline-block;
+    display: inline-block;
       }
 
   .menu {
         display: none;
+        padding-top: 7px;
       }
 
   .header {
@@ -311,10 +313,6 @@ body {
 
   .logo__circle_color_blue {
         top: 57%;
-      }
-
-  .menu {
-        padding-top: 7px;
       }
 
   .main {
@@ -345,7 +343,7 @@ body {
   .main__button {
     font: 500 14px/16px 'roboto', arial, helvetica, sans-serif;
     width: 203px;
-    padding: 14px 7px 12px 0px;
+    padding: 14px 7px 12px 0;
       }
 
   .image-content {
@@ -402,8 +400,9 @@ body {
       padding-left: 1px;
       list-style: none;
       text-align: center;
-      background-color: #FFF;
-      box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+      background-color: #fff;
+      box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+      transition-duration: 0.25s;
     }
 
    .menu {
@@ -430,6 +429,7 @@ body {
       color: #000;
       font: 500 30px/25px 'roboto', arial, helvetica, sans-serif;
       text-decoration: none;
+      transition-duration: 0.25s;
     }
 
     .menu__item:last-child {
@@ -481,15 +481,7 @@ body {
     .menu__btn > span,
     .menu__btn > span::before,
     .menu__btn > span::after {
-      transition-duration: .25s;
-    }
-
-    .menu__box {
-      transition-duration: .25s;
-    }
-
-    .menu__item {
-      transition-duration: .25s;
+      transition-duration: 0.25s;
     }
 
     }
