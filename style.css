@@ -487,7 +487,23 @@ body {
 
     }
 
-    @media (max-width: 375px) {
+@media (max-width: 400px) {
+  .main {
+    padding: 58% 0 0;
+    background-size: 62%;
+  }
+
+  .main__title {
+    font: bold 30px/40px 'pt_serif', arial, helvetica, sans-serif;
+    height: 95px;
+  }
+
+  .main__subtitle {
+    font: 500 15px/19px 'roboto', arial, helvetica, sans-serif;
+  }
+}
+
+@media (max-width: 375px) {
       .header {
         margin-left: 0;
       }
@@ -500,10 +516,12 @@ body {
       .main__title {
         padding-left: 6px;
         font: bold 32px/39px 'pt_serif', arial, helvetica, sans-serif;
+        height: 105px;
       }
 
-      .main__subtitle{
+      .main__subtitle {
         padding-left: 6px;
+        font: 500 16px/19px 'roboto', arial, helvetica, sans-serif;
       }
 
       .menu__btn {
