@@ -163,7 +163,7 @@ body {
     }
 }
 
-/*адаптация для 1366px*/
+/* адаптация для 1366px */
  @media (max-width: 1368px) {
   .wrapper {
   width: 68%;
@@ -262,7 +262,7 @@ body {
     margin-bottom: 42px;
    }
 
-   .main__sibtitle {
+   .main__subtitle {
     margin: 0 0 33px 0;
     font: 500 18px/21px 'roboto', arial, helvetica, sans-serif;
    }
@@ -270,8 +270,8 @@ body {
   .main__button {
     font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
     width: 179px;
-    height: 18px;
-    padding: 18px 20px 10px 10px;
+    height: 19px;
+    padding: 15px 20px 10px 10px;
    }
 
   .hamburger-menu{
@@ -393,9 +393,9 @@ body {
       visibility: hidden;
       top: 0;
       left: -100%;
-      width: 768px;
-      height: 800px;
-      margin: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
       padding-top: 174px;
       padding-left: 1px;
       list-style: none;
@@ -425,6 +425,7 @@ body {
       display: inline-block;
       padding: 17px 100px;
       margin-right: 0;
+      margin: 0;
       width: auto;
       color: #000;
       font: 500 30px/25px 'roboto', arial, helvetica, sans-serif;
@@ -504,11 +505,28 @@ body {
       .main__subtitle{
         padding-left: 6px;
       }
-      .menu__box {
-        width: 375px;
-        height: 492px;
-      }
+
       .menu__btn {
         right: 24px;
+      }
+    }
+
+    @media (max-width: 373px) {
+      .main {
+        padding: 70% 0 0;
+        background-size: 75%;
+      }
+
+      .main__title {
+        height: 103px;
+      }
+
+      .main__subtitle {
+        padding-left: 8px;
+      }
+
+      .main__button {
+        width: 190px;
+        padding: 15px 14px 11px 8px;
       }
     }
