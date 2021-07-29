@@ -82,6 +82,7 @@ body {
 }
 
 .menu__item:hover {
+  color: #000080;
   opacity: 0.5;
 }
 
@@ -131,7 +132,7 @@ body {
   display: inline-block;
   font: 500 18px/21px 'roboto', arial, helvetica, sans-serif;
   color: #fff;
-  background: #0056EC;
+  background: #0056ec;
   padding: 18px 17px 8px 12px;
   margin-left: 2px;
   text-decoration: none;
@@ -144,6 +145,24 @@ body {
 
 .main__button:hover {
   opacity: 0.5;
+  -webkit-animation-name: pulse-grow;
+  animation-name: pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@keyframes pulse-grow {
+100% {
+  -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 }
 
 .image-content {
