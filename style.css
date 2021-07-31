@@ -302,6 +302,16 @@ body {
 
 }
 
+@media (max-width: 1000px) {
+  .wrapper {
+    width: 95%;
+  }
+
+  .main {
+    background-size: 53%;
+  }
+}
+
 /* адаптация 375px */
 @media (max-width: 850px) {
   .wrapper {
@@ -527,7 +537,7 @@ body {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 390px) {
   .header {
     margin-left: 0;
   }
@@ -539,13 +549,19 @@ body {
 
   .main__title {
     padding-left: 6px;
-    font: bold 32px/39px 'pt_serif', arial, helvetica, sans-serif;
+    font: bold 32px/40px 'pt_serif', arial, helvetica, sans-serif;
     height: 105px;
   }
 
   .main__subtitle {
-    padding-left: 6px;
+    padding-left: 7px;
     font: 500 16px/19px 'roboto', arial, helvetica, sans-serif;
+    height: 58px;
+  }
+
+  .main__button {
+    padding: 15px 16px 10px 10px;
+    width: 181px;
   }
 
   .menu__btn {
@@ -566,6 +582,7 @@ body {
 
   .main__subtitle {
     padding-left: 8px;
+    height: 57px;
   }
 
   .main__button {
